@@ -1,0 +1,25 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+
+  "mssql": {
+    "client": "mssql",
+
+    "connection": {
+      "host": "localhost",
+      "user": "sa",
+      "password": "COSC*457",
+      "database": "company",
+      "port": 14330,
+      "options": {
+        "encrypt": false,
+        "enableArithAbort": true
+      }
+    }
+  }
+}
