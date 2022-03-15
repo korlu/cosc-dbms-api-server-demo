@@ -40,11 +40,6 @@
       margin-bottom: 30px;
     }
 
-    h2 {
-      font-size: 2em;
-      font-weight: 100;
-    }
-
     footer {
       position: fixed;
       bottom: 0;
@@ -58,15 +53,10 @@
       font-size: 1.0em;
     }
 
-    a {
-      color: #3cf;
-      text-decoration: none;
+    td {
+      white-space: nowrap;
     }
 
-    a:hover,
-    a:focus {
-      color: #3cf;
-    }
   </style>
 
   <link rel="stylesheet" href="themes/simplex/bootstrap.min.css">
@@ -89,9 +79,15 @@
       </div>
 
       <button type="button" class="btn btn-primary mb-3 me-3" onClick="executeQuery('#txtQuery')">Execute</button>
-      <button type="button" class="btn btn-danger mb-3" onClick="clearResult()">Clear Result</button>
+      <button type="button" class="btn btn-danger mb-3" onClick="clearResult('#txtQuery')">Clear Result</button>
 
-      <code id="output-content"></code>
+      <div class="form-check form-switch float-end">
+        <input class="form-check-input" type="checkbox" id="show-json" onchange="onShowJson()">
+        <label class="form-check-label" for="show-json">Show JSON output</label>
+      </div>
+
+      <div id="output-table" class="table-responsive mb-3"></div>
+      <code id="output-content" class="d-none"></code>
 
     </div>
 
@@ -105,6 +101,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.4.0/socket.io.min.js"
     integrity="sha512-gfppNkmmwLyyV/BXmzS9uWWbjxe0owp9N3wx9NeGmIHkFOiRM0EMmQte753JyYZd9uzIbjuSqPOvME0SvADXhw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/data-table2.js"></script>
   <script src="js/app-client.js"></script>
 </body>
 

@@ -48,6 +48,8 @@
     "feathers-knex": "^8.0.1",
     "helmet": "^4.6.0",
     "knex": "^1.0.3",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
     "mssql": "^8.0.2",
     "serve-favicon": "^2.5.0",
     "winston": "^3.6.0"
