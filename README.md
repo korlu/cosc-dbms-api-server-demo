@@ -21,16 +21,15 @@ Getting up and running is as easy as 1, 2, 3.
 3. Change DB ***host, user, password, and database*** in the default.config file in the config folder to appropriate DB server settings
 
     ```
+    ... code snippet ...
     "connection": {
       "host": "localhost",
       "user": "your DB server username",
       "password": "your DB server password",
       "database": "your DB name",
       "port": 1433,
-      "options": {
-        "encrypt": false,
-        "enableArithAbort": true
-    }
+    ... 
+    
     ```
  
  4. Start your app
